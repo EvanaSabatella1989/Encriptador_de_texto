@@ -6,31 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
     <title>Encriptador de Texto</title>
 </head>
 
 <body>
-    <img src="Logo.png" alt="">
+    <header>
+        <img src="imagenes/Logo.png" alt="">
+    </header>
+    <main>
+        <section>
+            <textarea class="input-text" name="" id="" cols="40" rows="6"
+                placeholder="Ingrese el texto aqui"></textarea>
+            <h6>Solo letras minusculas y sin acento</h6>
 
-    <input type="text" placeholder="Ingrese el texto aqui" class="input">
+            <div>
+                <button type="button" onclick="btnencriptar()">Encriptar</button>
+                <button type="button">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="input-text-area" name="" id="" cols="18" rows="8"></textarea>
+        </section>
+    </main>
 
-    <div class="frame1">
-        <p class="textoPeq">Solo letras minúsculas y sin acentos</p>
-    </div>
-
-    <div class="frame3">
-        <button class="boton1">Encriptar</button>
-        <button class="boton2">Desencriptar</button>
-    </div>
-    <div class="casa">
-
-        <img src="Muñeco.png" alt="" class="muñeco">
-
-        <div class="consigna">
-            <h3>Ningun texto fue encontrado</h3>
-            <p>Ingrese el texto que desea encriptar o desencriptar</p>
-        </div>
-    </div>
 
 
 </body>
