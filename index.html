@@ -6,32 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+
     <title>Encriptador de Texto</title>
 </head>
 
 <body>
     <header>
-        <img src="imagenes/Logo.png" alt="">
+        <img src="imagenes/Logo.png" alt="" class="logo">
     </header>
     <main>
         <section>
-            <textarea class="input-text" name="" id="" cols="40" rows="6"
-                placeholder="Ingrese el texto aqui"></textarea>
+            <input class="input-text" name="" id="" placeholder="Ingrese el texto aqui"></input>
             <h6>Solo letras minusculas y sin acento</h6>
 
             <div>
                 <button type="button" onclick="btnencriptar()">Encriptar</button>
-                <button type="button">Desencriptar</button>
+                <button type="button" onclick="btndesencriptar()">Desencriptar</button>
             </div>
         </section>
-        <section>
-            <textarea class="input-text-area" name="" id="" cols="18" rows="8"></textarea>
+        <section class="caja-resultado">
+            <textarea class="input-text-area" name="" id="" cols="18" rows="4"></textarea>
+            <img src="imagenes/Muñeco.png" alt="" class="muneco">
+            <button type="button" onclick="btncopiar()">Copiar</button>
         </section>
     </main>
 
 
-
+    <script src="scripts.js"></script>
 </body>
 
 </html>

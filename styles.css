@@ -8,6 +8,11 @@
   line-height: 150%;
 }
 
+.logo{
+  margin: 20px auto;
+  display: inline;
+}
+
 main{
   display: flex;
   /* flex-direction: row; */
@@ -17,12 +22,30 @@ main{
   flex-direction: row;
 } */
 
+.caja-resultado{
+  border: 2px solid red;
+  /* margin-left: 0; */
+  width: 400px;
+  height: 944px;
+  top: 0px;
+  left: 1000px;
+  border-radius: 32px;
+  margin: 40px 40px;
+  position: absolute;
+  
+}
+
 .input-text{
   margin-top: 90px;
 }
 
 .input-text-area{
-  margin-top:20px ;
-  position: relative;
-  margin-left: 90px;
+  border: none;
+  margin-top:30px ;
+  /* position: relative; */
+  width: 100%;
+}
+
+.muneco{
+  display: block;
 }
