@@ -16,18 +16,24 @@
     </header>
     <main>
         <section>
-            <input class="input-text" name="" id="" placeholder="Ingrese el texto aqui"></input>
-            <h6>Solo letras minusculas y sin acento</h6>
+            <form action="">
 
-            <div>
-                <button type="button" onclick="btnencriptar()">Encriptar</button>
-                <button type="button" onclick="btndesencriptar()">Desencriptar</button>
-            </div>
+                <input class="input-text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
+                <label for="input-texto">Solo letras minusculas y sin acento</label>
+
+
+                <div class="botones">
+                    <button type="button" class="boton" onclick="btnencriptar()">Encriptar</button>
+                    <button type="button" class="boton" onclick="btndesencriptar()">Desencriptar</button>
+
+
+                </div>
+            </form>
         </section>
         <section class="caja-resultado">
             <textarea class="input-text-area" name="" id="" cols="18" rows="4"></textarea>
             <img src="imagenes/Muñeco.png" alt="" class="muneco">
-            <button type="button" onclick="btncopiar()">Copiar</button>
+            <button type="button" class="boton" onclick="btncopiar()">Copiar</button>
         </section>
     </main>
 

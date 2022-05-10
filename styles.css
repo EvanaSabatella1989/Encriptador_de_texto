@@ -6,6 +6,7 @@
   font-weight: 400;
   font-size: 32px;
   line-height: 150%;
+  box-sizing: border-box;
 }
 
 .logo{
@@ -28,24 +29,121 @@ main{
   width: 400px;
   height: 944px;
   top: 0px;
-  left: 1000px;
+  margin: 0 800px;
+  /* left: 1000px; */
   border-radius: 32px;
-  margin: 40px 40px;
+  /* margin: 40px 40px; */
   position: absolute;
   
 }
 
 .input-text{
   margin-top: 90px;
+  border: 2px solid grey;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-left: 30px;
 }
+
+form label{
+  display: block;
+  margin: 5px;
+  font-size: 18px;
+  margin-left: 50px;
+}
+
+.botones{
+  /* border: 2px solid red; */
+  margin: 400px 200px;
+  
+  
+  
+}
+
+.boton{
+  border: 2px solid red;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 20px;
+  
+}
+ 
+.caja-resultado .boton{
+  margin: 130px 130px;
+  
+
+}
+
 
 .input-text-area{
   border: none;
   margin-top:30px ;
   /* position: relative; */
   width: 100%;
+  padding-left: 20px;
 }
 
 .muneco{
   display: block;
+}
+
+/* .invisible{
+  overflow: hidden;
+} */
+
+@media screen and (max-width:990px) {
+  .botones{
+    margin: 50px 100px;
+   width: 100%; 
+  }
+
+  
+
+  .caja-resultado{
+    margin: 450px 120px;
+  }
+
+  .input-text{
+    margin-top: 70px;
+    margin-left: 120px;
+  }
+
+  form label{
+    margin-left: 130px;
+  }
+  
+}
+
+@media screen and (max-width:660px) {
+  .input-text{
+    /* margin-top: 70px; */
+    /* margin-left: 130px; */
+    width:50%;
+  }
+
+  .boton{
+    /* margin: 50px 100px; */
+    width: 70%;
+    margin: 10px auto;
+    
+    
+  }
+
+  .caja-resultado{
+    margin: 550px 120px;
+    width: 50%;
+  }
+
+  .muneco{
+    width: 70%;
+  }
+
+  .caja-resultado .boton{
+    /* margin: auto; */
+    width: 100%;
+    margin-top: 100px;
+    
+  
+  }
+  
 }
